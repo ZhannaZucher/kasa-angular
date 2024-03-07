@@ -202,9 +202,4 @@ template {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  min-height: 100vh;
 }
