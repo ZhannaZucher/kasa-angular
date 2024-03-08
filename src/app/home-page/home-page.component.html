@@ -3,4 +3,10 @@
     <img class="banner__img" src="assets/img-home.jpg" alt="rocks" />
     <h1 class="banner__title">Chez vous, partout et ailleurs</h1></app-banner
   >
+  <section class="housing-content">
+    <app-accomodation-view
+      *ngFor="let accomodationElement of accomodations"
+      [accomodation]="accomodationElement"
+    ></app-accomodation-view>
+  </section>
 </main>
