@@ -2,5 +2,12 @@
   <app-banner>
     <img class="banner__img" src="assets/img-about.jpg" alt="mountains" />
   </app-banner>
-  <section class="about-content"></section>
+  <section class="about-content">
+    <app-collapse
+      *ngFor="let dataElement of dataAbout"
+      [title]="dataElement.title"
+    >
+      <p>{{ dataElement.description }}</p>
+    </app-collapse>
+  </section>
 </main>
