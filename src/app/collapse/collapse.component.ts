@@ -19,6 +19,5 @@ export class CollapseComponent implements OnInit {
 
   onClickCollapse(): void {
     this.isOpen ? (this.isOpen = false) : (this.isOpen = true)
-    console.log(this.isOpen)
   }
 }
