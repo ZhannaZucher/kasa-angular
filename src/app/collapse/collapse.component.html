@@ -1,0 +1,23 @@
+<div
+  class="collapsible"
+  [ngClass]="{ 'collapsible--accommodation': classModifier === true }"
+>
+  <button class="collapsible__btn" (click)="onClickCollapse()">
+    <h3 class="collapsible__title">{{ title }}</h3>
+    <img
+      *ngIf="isOpen === true"
+      src="/assets/arrow.svg"
+      alt="arrow-up"
+      class="collapsible__arrow-up"
+    />
+    <img
+      *ngIf="isOpen === false"
+      src="/assets/arrow.svg"
+      alt="arrow-down"
+      class="collapsible__arrow-down"
+    />
+  </button>
+  <div *ngIf="isOpen === true" class="collapsible__content">
+    <ng-content></ng-content>
+  </div>
+</div>
