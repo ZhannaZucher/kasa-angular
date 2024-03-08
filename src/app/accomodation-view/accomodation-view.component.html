@@ -1,0 +1,8 @@
+<a [routerLink]="'/accomodation/' + accomodation.id">
+  <article class="accommodation-card">
+    <div class="accommodation-card__view">
+      <img [src]="accomodation.cover" [alt]="accomodation.title" />
+    </div>
+    <h2 class="accommodation-card__label">{{ accomodation.title }}</h2>
+  </article>
+</a>
