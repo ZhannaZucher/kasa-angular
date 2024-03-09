@@ -1,0 +1,22 @@
+<div class="gallery">
+  <img
+    *ngIf="slides.length > 1"
+    class="gallery__previous"
+    src="/assets/arrow-back.svg"
+    alt="arrow-left"
+    (click)="goToPrevious()"
+  />
+  <img
+    *ngIf="slides.length > 1"
+    class="gallery__next"
+    src="/assets/arrow-back.svg"
+    alt="arrow-right"
+    (click)="goToNext()"
+  />
+  <img
+    [src]="slides[currentIndex]"
+    alt="Accommodation view"
+    class="gallery__view"
+  />
+  <p class="gallery__counter">{{ currentIndex + 1 }} / {{ slides.length }}</p>
+</div>
