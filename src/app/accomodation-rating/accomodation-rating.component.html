@@ -1,0 +1,11 @@
+<div class="acc-owner__rating">
+  <div *ngFor="let star of getStars(rating)" class="acc-owner__rating-item">
+    <img src="/assets/star-active.svg" alt="active-star-icon" />
+  </div>
+  <div
+    *ngFor="let star of getEmptyStars(rating)"
+    class="acc-owner__rating-item"
+  >
+    <img src="/assets/star-inactive.svg" alt="inactive-star-icon" />
+  </div>
+</div>

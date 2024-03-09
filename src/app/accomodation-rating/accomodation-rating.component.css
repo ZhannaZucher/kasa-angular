@@ -1,0 +1,19 @@
+.acc-owner__rating {
+  display: flex;
+  margin-top: 15px;
+}
+
+.acc-owner__rating-item {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .acc-owner__rating-item {
+    margin: 0;
+  }
+
+  .acc-owner__rating-item img {
+    width: 20px;
+    height: 20px;
+  }
+}
