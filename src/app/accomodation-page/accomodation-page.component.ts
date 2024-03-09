@@ -2,7 +2,6 @@ import { Component, OnInit } from "@angular/core"
 import { Accomodation } from "../models/accomodation.model"
 import { ActivatedRoute, RouterModule } from "@angular/router"
 import { AccomodationsService } from "../services/accomodations.service"
-import { log } from "console"
 import { AccomodationCardComponent } from "../accomodation-card/accomodation-card.component"
 
 @Component({
