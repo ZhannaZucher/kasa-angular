@@ -1,0 +1,7 @@
+#main-accommodation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 20px 0 200px;
+}
