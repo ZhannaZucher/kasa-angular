@@ -1,0 +1,39 @@
+<section class="acc">
+  <div class="acc-about__row">
+    <div class="acc-about__column">
+      <h1 class="acc-about__label">{{ accomodation.title }}</h1>
+      <h3 class="acc-about__location">{{ accomodation.location }}</h3>
+      <div class="acc-about__tags">
+        <!-- {queryData.tags.map((tag, index) => (
+                <Tag key={index} content={tag} />
+              ))} -->
+      </div>
+    </div>
+    <div class="acc-owner__column">
+      <div class="acc-owner__row">
+        <h2 class="acc-owner__name">
+          {{ accomodation.host.name.split(" ")[0] }}
+          <br />
+          {{ accomodation.host.name.split(" ")[1] }}
+        </h2>
+        <div class="acc-owner__img">
+          <img
+            [src]="accomodation.host.picture"
+            [alt]="accomodation.host.name"
+          />
+        </div>
+      </div>
+      <!-- <Rating scaleValue={queryData.rating} /> -->
+    </div>
+  </div>
+  <div class="acc-details">
+    <app-collapse [classModifier]="true" [title]="'Description'">
+      <p>{{ accomodation.description }}</p>
+    </app-collapse>
+    <app-collapse [classModifier]="true" [title]="'Equipements'">
+      <ul *ngFor="let element of accomodation.equipments">
+        <li>{{ element }}</li>
+      </ul>
+    </app-collapse>
+  </div>
+</section>
