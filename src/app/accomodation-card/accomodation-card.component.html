@@ -7,9 +7,6 @@
         <app-accomodation-tags *ngFor="let tag of accomodation.tags">
           <p>{{ tag }}</p>
         </app-accomodation-tags>
-        <!-- {queryData.tags.map((tag, index) => (
-                <Tag key={index} content={tag} />
-              ))} -->
       </div>
     </div>
     <div class="acc-owner__column">
@@ -26,7 +23,9 @@
           />
         </div>
       </div>
-      <!-- <Rating scaleValue={queryData.rating} /> -->
+      <app-accomodation-rating
+        [rating]="accomodation.rating"
+      ></app-accomodation-rating>
     </div>
   </div>
   <div class="acc-details">
