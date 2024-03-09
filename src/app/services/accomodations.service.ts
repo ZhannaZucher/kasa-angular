@@ -12,4 +12,15 @@ export class AccomodationsService {
     console.log(this.accomodations)
     return this.accomodations
   }
+
+  getAccomodationById(accId: string): Accomodation {
+    const accomodation: Accomodation | undefined = this.accomodations.find(
+      (acc) => acc?.id === accId
+    )
+    if (!accomodation) {
+      throw new Error("accomodation not found")
+    } else {
+      return accomodation
+    }
+  }
 }
