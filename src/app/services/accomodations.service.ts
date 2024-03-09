@@ -9,7 +9,6 @@ export class AccomodationsService {
   accomodations: Accomodation[] = data
 
   getAllAccomodations(): Accomodation[] {
-    console.log(this.accomodations)
     return this.accomodations
   }
 
