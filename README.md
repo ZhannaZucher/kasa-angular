@@ -1,27 +1,42 @@
-# KasaAngular
+# Kasa Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![TS](https://img.shields.io/badge/TypeScript-F7DF1E?style=for-the-badge&logo=typescript&logoColor=black)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 
-## Development server
+This project 11 of the "JS and React app developer" OpenClassRooms' training course was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[Demo of Kasa app is available on Github Pages](https://zhannazucher.github.io/kasa-react/)
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Kasa](kasa_banner.png)
 
-## Build
+### Context
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Kasa has been in the private apartment rental business for nearly 10 years now. With more than 500 ads posted every day, Kasa is one of the leaders in private apartment rentals in France.
 
-## Running unit tests
+### Project goal
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Total redesign of the app in order to move later to a full stack in NodeJS for the backend and React for the frontend.
 
-## Running end-to-end tests
+Figma files are disponible [here](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design?node-id=4%3A1)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Local setup
 
-## Further help
+1. Clone and/or fork this repository.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. Install the dependencies:
+
+```bash
+npm install
+```
+
+3. Then, run the development server:
+
+```bash
+ng serve
+```
+
+4. Open [http://localhost:4200/](http://localhost:4200/) with your browser to see the result.
